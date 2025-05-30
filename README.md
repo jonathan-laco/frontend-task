@@ -56,7 +56,7 @@ Este projeto é uma aplicação web frontend para gerenciamento de tarefas (Task
 
 1. **Clone o repositório**
    ```bash
-   git clone jonathan-laco/frontend-task
+   git clone https://github.com/jonathan-laco/frontend-task
    cd task-manager-frontend
    ```
 2. **Instale as dependências**
