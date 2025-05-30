@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+## Task Manager Frontend
 
-## Project info
+### Visão Geral
 
-**URL**: https://lovable.dev/projects/ecbc7419-ea03-4d56-b370-62f9ac23c839
+Este projeto é uma aplicação web frontend para gerenciamento de tarefas (Task Manager), desenvolvida com **React**, **TypeScript** e **Vite**. A aplicação permite aos usuários criar uma conta, fazer login e gerenciar suas tarefas diárias com funcionalidades completas de CRUD (Criar, Ler, Atualizar e Deletar).
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+### Funcionalidades
 
-**Use Lovable**
+#### Autenticação de Usuários
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ecbc7419-ea03-4d56-b370-62f9ac23c839) and start prompting.
+- Registro de novos usuários
+- Login com email e senha
+- Sessões persistentes com cookies
+- Proteção de rotas para usuários autenticados
 
-Changes made via Lovable will be committed automatically to this repo.
+#### Gerenciamento de Tarefas
 
-**Use your preferred IDE**
+- Listagem de tarefas com status visual (pendentes, concluídas, atrasadas)
+- Criação de novas tarefas com título, descrição e data de vencimento
+- Edição de tarefas existentes
+- Exclusão de tarefas
+- Marcação de tarefas como concluídas/pendentes
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+#### Interface Responsiva
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Design adaptável para desktop e dispositivos móveis
+- Dashboard com estatísticas de tarefas
+- Feedback visual para todas as operações
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Tecnologias Utilizadas
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **React** – Biblioteca para construção de interfaces
+- **TypeScript** – Tipagem estática para JavaScript
+- **Vite** – Build tool e dev server
+- **React Router** – Navegação entre páginas
+- **Tailwind CSS** – Framework CSS para estilização
+- **Shadcn/UI** – Componentes UI baseados em Radix UI
+- **Lucide React** – Biblioteca de ícones
+- **date-fns** – Manipulação e formatação de datas
+- **js-cookie** – Gerenciamento de cookies para autenticação
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Instalação e Execução
 
-**Edit a file directly in GitHub**
+#### Pré-requisitos
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Node.js**
+- **npm**
 
-**Use GitHub Codespaces**
+#### Passos para instalação
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone o repositório**
+   ```bash
+   git clone jonathan-laco/frontend-task
+   cd task-manager-frontend
+   ```
+2. **Instale as dependências**
+   ```bash
+   npm install
+   # ou
+   bun install
+   ```
+3. **Configure as variáveis de ambiente**
 
-## What technologies are used for this project?
+   Copie o arquivo `.env.example` para `.env` e ajuste as variáveis conforme necessário.
 
-This project is built with:
+4. **Inicie o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+5. **Acesse a aplicação**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+   Abra [http://localhost:8080](http://localhost:8080) no seu navegador.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/ecbc7419-ea03-4d56-b370-62f9ac23c839) and click on Share -> Publish.
+### Scripts Disponíveis
 
-## Can I connect a custom domain to my Lovable project?
+- `npm run dev` – Inicia o servidor de desenvolvimento
+- `npm run build` – Cria uma versão otimizada para produção
+- `npm run preview` – Visualiza a versão de produção localmente
+- `npm run lint` – Executa verificações de linting no código
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### API Backend
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Esta aplicação frontend depende de uma API backend que pode ser encontrada em um repositório separado. A API deve estar rodando na URL especificada no arquivo `.env`.
+
+---
+
+Desenvolvido por Jonathan Laco
