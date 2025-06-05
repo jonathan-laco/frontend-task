@@ -92,6 +92,15 @@ Este projeto é uma aplicação web frontend para gerenciamento de tarefas (Task
 
 Esta aplicação frontend depende de uma API backend que pode ser encontrada em um repositório separado. A API deve estar rodando na URL especificada no arquivo `.env`.
 
+**Repositório Backend:**  
+[https://github.com/jonathan-laco/backend-task](https://github.com/jonathan-laco/backend-task)
+
+**Documentação:**  
+[https://www.notion.so/Teste-T-cnico-Desenvolvedor-Fullstack-Node-js-React-2034422bc77080b0990fc8f77ab6f849?source=copy_link](https://www.notion.so/Teste-T-cnico-Desenvolvedor-Fullstack-Node-js-React-2034422bc77080b0990fc8f77ab6f849?source=copy_link)
+
+**Postman Collection:**  
+[https://www.postman.com/jonathan-dev-1195/api-task/collection/jkbefxx/api-task?action=share&creator=14156529](https://www.postman.com/jonathan-dev-1195/api-task/collection/jkbefxx/api-task?action=share&creator=14156529)
+
 ---
 
 Desenvolvido por Jonathan Laco
